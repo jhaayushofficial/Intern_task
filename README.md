@@ -2,6 +2,21 @@
 
 Visualize relationships between users and transactions using Neo4j (backend) and a React frontend.
 
+## Tech Stack
+
+- ⚡ Neo4j (Graph Database)
+- 🔧 Express.js (Backend API)
+- 🖥️ React + MUI + Cytoscape.js (Frontend Visualization)
+- 🐳 Docker & Docker Compose (Deployment)
+
+## Features
+
+- Create and view users & transactions
+- Auto-link users via shared email/phone/address/device
+- Auto-link transactions via sender/receiver IP or sender/receiver Device ID
+- Visualize graph relationships in real time
+- REST APIs for all entities
+
 ## Getting started
 
 1. Clone the repo
