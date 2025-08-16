@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Env files (keep secrets out of git)
+.env
+.env.*
+!.env.example
+
+# Build outputs / coverage / caches
+build/
+dist/
+coverage/
+.cache/
+
+# Temporary files
+.tmp/
+tmp/
+.temp/
+*.pid
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.tgz
+
+# TypeScript (if used later)
+*.tsbuildinfo

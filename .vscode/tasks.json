@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "reset-and-seed-backend",
+			"type": "shell",
+			"command": "npm run reset:seed:minimal",
+			"args": [],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
