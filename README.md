@@ -59,8 +59,6 @@ npm run dev
 
 ## Data generation
 
-## Data generation
-
 Populate or re-populate the graph any time:
 
 - Auto on backend startup (dev): set in `docker-compose.yml` (backend.environment)
