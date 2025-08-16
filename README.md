@@ -2,10 +2,18 @@
 
 Visualize relationships between users and transactions using Neo4j (backend) and a React frontend.
 
-## Quick start (Docker)
+## Getting started
+
+1. Clone the repo
 
 ```powershell
-# from repo root
+git clone https://github.com/jhaayushofficial/Intern_task.git
+cd Intern_task
+```
+
+2. Run with Docker (recommended)
+
+```powershell
 docker compose up -d --build
 ```
 
@@ -14,6 +22,42 @@ Open:
 - Frontend: http://localhost:5173/
 - API health: http://localhost:3000/health
 - Neo4j Browser: http://localhost:7474/ (neo4j / Str0ngPass!)
+
+Optional: auto-seed on start (dev)
+
+Edit `docker-compose.yml` under backend.environment:
+
+```yaml
+AUTO_GENERATE_DATA: "true"
+GENERATE_MODE: "demo"
+```
+
+Then restart backend:
+
+```powershell
+docker compose up -d --build backend
+```
+
+3. Or run locally (without Docker)
+
+Backend
+
+```powershell
+cd .\backend
+npm install
+"NEO4J_URI=bolt://localhost:7687`nNEO4J_USERNAME=neo4j`nNEO4J_PASSWORD=Str0ngPass!`nPORT=3000" | Out-File -Encoding utf8 .env
+npm start
+```
+
+Frontend
+
+```powershell
+cd ..\frontend
+npm install
+npm run dev
+```
+
+## Data generation
 
 ## Data generation
 
@@ -81,7 +125,3 @@ npm run dev
   ```powershell
   docker compose down -v; docker compose up -d --build
   ```
-
-## License
-
-ISC
